@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>
+Image change
+</title>
+<script language="javascript" type="text/javascript">
+function changeImage()
+{
+	var number=Math.floor(Math.random() *4);
+	var imageSrc=["1.jpeg","2.jpeg","3.jpeg","4.jpeg"];
+	document.getElementById("image").src=imageSrc[number];
+}
+</script>
+</head>
+<body>
+<p align="center">
+<img src="1.jpg" width="500px" height="700px" onmouseover="changeImage()" id="image">
+</p>
+
+</body>
+	
+</html>
